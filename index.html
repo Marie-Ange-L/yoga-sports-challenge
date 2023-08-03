@@ -50,50 +50,100 @@
 				font-family: "Quicksand", sans-serif;
 				color: #ff6f61;
 				font-size: 25px;
-				font-style: italic;
-				padding: 12px;
-			}
-
-			.benefits,
-			.instructions {
-				font-family: "Dancing Script";
-				font-weight: 700;
-				font-size: 18px;
-				color: #4fc3a1;
+				padding: 20px 0 0 0;
+				font-weight: 600;
 			}
 
 			.poses {
 				background-color: #fff;
-				border: #ff6f61 solid 1px;
-                border-radius: 2px;
+				border-radius: 2px;
 				padding: 25px 25px 25px 0;
 			}
 
 			.poses ul {
 				padding: 0;
 				list-style: none;
+				border-right: solid #777 1px;
 			}
 
 			.poses li {
-				padding: 5px;
+				padding: 5px 5px 5px 5px;
+				font-family: Quicksand;
+				position: relative;
+				margin: 8px 0;
+				border-radius: 0 2px 2px 0;
+				overflow: hidden;
+			}
+
+			.poses li span {
+				font-weight: 900;
+				color: #fff;
+				padding-right: 10px;
+				display: inline-block;
+				width: 30px;
+				text-align: center;
+			}
+
+			.poses li::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				width: 30px;
+				background-color: #ff6f61;
+				transition: 0.3s all ease-in-out;
+				max-width: 250px;
+				border-radius: 0 50px 50px 0;
+			}
+
+			a.menuLink {
+				text-decoration: none;
+				display: block;
+				width: 100%;
+				height: 100%;
+				color: #333;
+				position: relative;
+				z-index: 1;
+			}
+
+			a.menuLink:hover {
+				color: #fff;
+				font-weight: 600;
+			}
+
+			.poses li:hover::before {
+				border-radius: 0 50px 50px 0;
+				width: 110%;
 			}
 
 			img {
-                max-height: 250px;
-            }
+				max-height: 250px;
+				filter: brightness(110%) hue-rotate(342deg) saturate(84%);
+			}
 
 			.pose {
-				color: #1e90ff;
+				color: #333;
 				font-weight: 700;
 				font-family: Quicksand;
-				font-size: 22px;
-                margin: 0;
+				font-size: 28px;
+				margin: 0 0 0 20px;
 			}
-            .pose-sanskrit {
-				color: #1e90ff;
+			.pose-sanskrit {
+				color: #777;
 				font-family: Quicksand;
 				font-size: 18px;
-                font-style: italic;
+				font-style: italic;
+				margin-left: 30px;
+			}
+
+			.benefits,
+			.instructions {
+				font-family: "Dancing Script";
+				font-weight: 700;
+				font-size: 24px;
+				color: #4fc3a1;
+				margin-bottom: 5px;
 			}
 
 			footer {
@@ -117,26 +167,55 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<ul>
-							<li><a href="#" class="linkMenu">1. Downward facing dog</a></li>
-							<li><a href="#" class="linkMenu">2. Upward facing dog</a></li>
-							<li><a href="#" class="linkMenu">3. Tree</a></li>
-							<li><a href="#" class="linkMenu">4. Full plank</a></li>
-							<li><a href="#" class="linkMenu">5. Warrior 2</a></li>
-							<li><a href="#" class="linkMenu">6. Cat / Cow</a></li>
-							<li><a href="#" class="linkMenu">7. Bound angle</a></li>
-							<li><a href="#" class="linkMenu">8. Standing forward bend</li>
-							<li><a href="#" class="linkMenu">9. Pigeon</a></li>
-							<li><a href="#" class="linkMenu">10. Child</a></li>
+							<li>
+								<a href="#" class="menuLink"
+									><span>1</span> Downward facing dog</a
+								>
+							</li>
+							<li>
+								<a href="#" class="menuLink"
+									><span>2</span> Upward facing dog</a
+								>
+							</li>
+							<li>
+								<a href="#" class="menuLink"><span>3</span> Tree Pose</a>
+							</li>
+							<li>
+								<a href="#" class="menuLink"><span>4</span> Full plank</a>
+							</li>
+							<li>
+								<a href="#" class="menuLink"><span>5</span> Warrior 2</a>
+							</li>
+							<li>
+								<a href="#" class="menuLink"><span>6</span> Cat / Cow Pose</a>
+							</li>
+							<li>
+								<a href="#" class="menuLink"><span>7</span> Bound Angle Pose</a>
+							</li>
+							<li>
+								<a href="#" class="menuLink"
+									><span>8</span> Standing forward bend</a
+								>
+							</li>
+							<li>
+								<a href="#" class="menuLink"><span>9</span> Pigeon Pose</a>
+							</li>
+							<li>
+								<a href="#" class="menuLink"><span>10</span> Child's Pose</a>
+							</li>
 						</ul>
 					</div>
-
 					<div class="col-sm-9">
-						<div class="hiddenContent" id="content1" style="display: block"><p class="pose">Downward Facing Dog</p>
-                                    <p class="pose-sanskrit">Adho Mukha Svanasana</p>
+						<div class="hiddenContent" id="content1" style="display: block">
+							<p class="pose">Downward Facing Dog</p>
+							<p class="pose-sanskrit">Adho Mukha Svanasana</p>
 							<div class="row">
-								<div class="col-sm-6">
-									
-									<img class="img-fluid mx-auto d-block" src="img/01_downward-dog.jpg" alt="" />
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/01_downward-dog.jpg"
+										alt=""
+									/>
 								</div>
 								<div class="col-sm-6">
 									<p class="benefits">Benefits</p>
@@ -152,6 +231,257 @@
 										forming an inverted V shape. Press your heels towards the
 										ground, engage your core, and relax your neck. Hold for
 										several breaths.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content2" style="display: none">
+							<p class="pose">Upward Facing Dog</p>
+							<p class="pose-sanskrit">Urdhva Mukha Svanasana</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/02_upward-dog.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-7">
+									<p class="benefits">Benefits</p>
+									<p>
+										Strengthens the spine, arms, and wrists, opens the chest and
+										shoulders, stretches the abdomen, and improves posture.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Lie facedown on the floor, place your palms next to your
+										ribcage, and press the tops of your feet into the mat.
+										Inhale, straighten your arms, lift your chest, and look up.
+										Keep your thighs and knees off the ground while engaging
+										your back muscles.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content3" style="display: none">
+							<p class="pose">Tree Pose</p>
+							<p class="pose-sanskrit">Vrksasana</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/03_tree.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Enhances balance and focus, strengthens the legs and core,
+										stretches the hips and inner thighs, and promotes a sense of
+										grounding and stability.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Stand tall, shift your weight onto one leg, and place the
+										sole of your other foot on the inner thigh or calf of the
+										standing leg. Find a focal point to gaze at and bring your
+										hands together at your chest in a prayer position. Hold for
+										a few breaths before switching sides.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content4" style="display: none">
+							<p class="pose">Full Plank</p>
+							<p class="pose-sanskrit">Utthita Chaturanga Dandasana</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/04_plank.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Builds core strength, tones the arms, shoulders, and back
+										muscles, improves posture, and strengthens the wrists.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Begin in a push-up position with your hands directly under
+										your shoulders and legs extended behind you. Keep your body
+										in a straight line from head to heels, engage your core, and
+										hold for as long as you can maintain proper form.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content5" style="display: none">
+							<p class="pose">Warrior 2</p>
+							<p class="pose-sanskrit">Virabhadrasana II</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/05_warrior2.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Strengthens and tones the legs, hips, and shoulders,
+										improves focus and concentration, stretches the groins, and
+										promotes stability and endurance.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Start in a wide-legged stance, turn one foot out, and bend
+										the knee to a 90-degree angle, keeping the knee directly
+										over the ankle. Extend your arms parallel to the ground,
+										with one arm reaching forward and the other back, gazing
+										over the front hand.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content6" style="display: none">
+							<p class="pose">Cat / Cow Pose</p>
+							<p class="pose-sanskrit">Marjaryasana/Bitilasana</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/06_cow.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Warms up the spine, improves flexibility and mobility in the
+										spine, massages the organs, and helps relieve back and neck
+										tension.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Start on your hands and knees. For the "Cat" pose, round
+										your back upwards, tuck your chin, and breathe out. For the
+										"Cow" pose, arch your back downwards, lift your head and
+										tailbone, and breathe in. Flow between these two poses
+										smoothly.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content7" style="display: none">
+							<p class="pose">Bound Angle Pose</p>
+							<p class="pose-sanskrit">Baddha Konasana</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/07_bound-angle.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Opens the hips and groin, stretches the inner thighs,
+										improves circulation in the pelvic area, and stimulates the
+										abdominal organs.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Sit with your legs extended in front of you, bend your
+										knees, and bring the soles of your feet together. Hold your
+										feet with your hands, lengthen your spine, and gently press
+										your knees towards the floor.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content8" style="display: none">
+							<p class="pose">Standing Forward Bend</p>
+							<p class="pose-sanskrit">Uttanasana</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/08_bend.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Stretches the hamstrings and calves, relieves tension in the
+										spine, calms the mind, and improves digestion.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Stand with feet hip-width apart, hinge at the hips, and fold
+										forward with a straight back. Let your upper body hang down
+										and relax your neck. You can bend your knees slightly if
+										needed.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content9" style="display: none">
+							<p class="pose">Pigeon Pose</p>
+							<p class="pose-sanskrit">Kapotasana/Eka Pada Rajakapotasana</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/09_pigeon.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Opens the hips, stretches the thighs and groin, improves
+										flexibility, and releases tension in the lower back.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Start in a plank position, bring one knee towards your
+										chest, and place it behind your hand with the foot angled
+										towards the opposite hip. Slide the other leg back and lower
+										your body towards the ground, keeping the hips square.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hiddenContent" id="content10" style="display: none">
+							<p class="pose">Child's Pose</p>
+							<p class="pose-sanskrit">Balasana</p>
+							<div class="row">
+								<div class="col-sm-5">
+									<img
+										class="img-fluid mx-auto d-block"
+										src="img/10_child.jpg"
+										alt=""
+									/>
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Relaxes the mind and body, gently stretches the hips,
+										thighs, and ankles, and helps relieve stress and fatigue.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Kneel on the floor, sit back on your heels, and fold your
+										torso forward, bringing your forehead to the ground. Extend
+										your arms in front of you or alongside your body. Breathe
+										deeply and stay in this resting pose as long as you like.
 									</p>
 								</div>
 							</div>
@@ -173,7 +503,7 @@
 				target="_blank"
 				>Marie-Ange L.</a
 			>
-			as part of a Challenge organised by SheCodes in June 2023.<br />Illustrations
+			as part of a Challenge organised by SheCodes in August 2023.<br />Illustrations
 			by
 			<a
 				href="https://www.freepik.com/free-vector/set-yoga-postures_32669926.htm#query=happy%20baby%20yoga%20pose&position=25&from_view=search&track=ais"
@@ -182,5 +512,18 @@
 			on Freepik
 		</p>
 	</footer>
-	<script></script>
+	<script>
+		const links = document.querySelectorAll(".menuLink");
+		const hiddenContents = document.querySelectorAll(".hiddenContent");
+
+		links.forEach((link, index) => {
+			link.addEventListener("click", function () {
+				hiddenContents.forEach((content) => {
+					content.style.display = "none";
+				});
+
+				hiddenContents[index].style.display = "block";
+			});
+		});
+	</script>
 </html>
