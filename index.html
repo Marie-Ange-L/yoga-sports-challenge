@@ -10,6 +10,10 @@
 			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
 			crossorigin="anonymous"
 		/>
+		<script
+			src="https://kit.fontawesome.com/79fdbc0739.js"
+			crossorigin="anonymous"
+		></script>
 		<style>
 			/* Font Imports */
 			@import url("https://fonts.googleapis.com/css?family=Quicksand:300,500,700");
@@ -64,6 +68,7 @@
 				padding: 0;
 				list-style: none;
 				border-right: solid #777 1px;
+				margin-bottom: 40px;
 			}
 
 			.poses li {
@@ -147,12 +152,56 @@
 			}
 
 			footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				z-index: 2;
 				background-color: #c5c8ca;
 				text-align: center;
+				padding: 5px 0;
 			}
 
 			footer p {
 				font-size: 12px;
+				margin: 0;
+			}
+
+			footer a {
+				color: #333;
+				text-underline-offset: 2px;
+			}
+
+			footer a:hover {
+				text-decoration: none;
+			}
+
+			.btn-back-to-top {
+				padding: 0.5rem 1rem;
+				right: 1rem;
+				bottom: 50px;
+				position: fixed;
+				z-index: 3;
+				background-color: #ff6f61;
+				border: none;
+			}
+
+			.btn-back-to-top a {
+				color: #fff;
+			}
+
+			.btn-back-to-top:hover {
+				background-color: #ff6f61;
+			}
+
+			.btn-back-to-top:active {
+				background-color: #ff6f61;
+			}
+
+			@media (max-width: 991px) {
+				.poses ul {
+					border-right: none;
+				}
 			}
 		</style>
 	</head>
@@ -162,50 +211,64 @@
 	</header>
 	<body>
 		<div class="container">
-			<h3>My 1O favorite yoga poses</h3>
+			<h3>1O Yoga Poses for Beginners</h3>
 			<div class="poses">
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-lg-3">
 						<ul>
 							<li>
-								<a href="#" class="menuLink"
+								<a href="#content1" class="menuLink"
 									><span>1</span> Downward facing dog</a
 								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"
+								<a href="#content2" class="menuLink"
 									><span>2</span> Upward facing dog</a
 								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"><span>3</span> Tree Pose</a>
+								<a href="#content3" class="menuLink"
+									><span>3</span> Tree Pose</a
+								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"><span>4</span> Full plank</a>
+								<a href="#content4" class="menuLink"
+									><span>4</span> Full plank</a
+								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"><span>5</span> Warrior 2</a>
+								<a href="#content5" class="menuLink"
+									><span>5</span> Warrior 2</a
+								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"><span>6</span> Cat / Cow Pose</a>
+								<a href="#content6" class="menuLink"
+									><span>6</span> Cat / Cow Pose</a
+								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"><span>7</span> Bound Angle Pose</a>
+								<a href="#content7" class="menuLink"
+									><span>7</span> Bound Angle Pose</a
+								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"
+								<a href="#content8" class="menuLink"
 									><span>8</span> Standing forward bend</a
 								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"><span>9</span> Pigeon Pose</a>
+								<a href="#content9" class="menuLink"
+									><span>9</span> Pigeon Pose</a
+								>
 							</li>
 							<li>
-								<a href="#" class="menuLink"><span>10</span> Child's Pose</a>
+								<a href="#content10" class="menuLink"
+									><span>10</span> Child's Pose</a
+								>
 							</li>
 						</ul>
 					</div>
-					<div class="col-sm-9">
+					<div class="col-lg-9 mb-5">
 						<div class="hiddenContent" id="content1" style="display: block">
 							<p class="pose">Downward Facing Dog</p>
 							<p class="pose-sanskrit">Adho Mukha Svanasana</p>
@@ -489,9 +552,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="about">
-				<h3>How I got into yoga</h3>
-			</div>
+		</div>
+		<div class="btn btn-back-to-top">
+			<a href="#"><i class="fa fa-angle-up"></i></a>
 		</div>
 	</body>
 	<footer>
@@ -503,12 +566,9 @@
 				target="_blank"
 				>Marie-Ange L.</a
 			>
-			as part of a Challenge organised by SheCodes in August 2023.<br />Illustrations
-			by
-			<a
-				href="https://www.freepik.com/free-vector/set-yoga-postures_32669926.htm#query=happy%20baby%20yoga%20pose&position=25&from_view=search&track=ais"
-				>brgfx</a
-			>
+			as part of a Challenge organised by SheCodes in August 2023 &mdash;
+			Illustrations by
+			<a href="https://www.freepik.com/author/brgfx" target="_blank">brgfx</a>
 			on Freepik
 		</p>
 	</footer>
