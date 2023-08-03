@@ -19,14 +19,13 @@
 			/* General Styles */
 			body {
 				background-color: #fdfdfd;
-				margin: 0;
-				padding: 0;
-				font-family: "Source Sans 3", sans-serif;
+				font-family: "Source Sans 3";
+				font-size: 14px;
 				color: #333;
 			}
 
 			header {
-				margin: 15px 100px;
+				margin: 15px 20%;
 			}
 
 			header h1,
@@ -47,29 +46,54 @@
 				line-height: 48px;
 			}
 
-			.container {
-				margin: 0;
-				padding: 0;
-			}
-
-			.benefits,
-			.instructions {
-				font-family: "Dancing Script", cursive;
-				font-weight: 700;
-				color: #4fc3a1;
-			}
-
 			h3 {
 				font-family: "Quicksand", sans-serif;
 				color: #ff6f61;
 				font-size: 25px;
 				font-style: italic;
-				text-align: center;
+				padding: 12px;
+			}
+
+			.benefits,
+			.instructions {
+				font-family: "Dancing Script";
+				font-weight: 700;
+				font-size: 18px;
+				color: #4fc3a1;
 			}
 
 			.poses {
 				background-color: #fff;
-				padding: 25px 0;
+				border: #ff6f61 solid 1px;
+                border-radius: 2px;
+				padding: 25px 25px 25px 0;
+			}
+
+			.poses ul {
+				padding: 0;
+				list-style: none;
+			}
+
+			.poses li {
+				padding: 5px;
+			}
+
+			img {
+                max-height: 250px;
+            }
+
+			.pose {
+				color: #1e90ff;
+				font-weight: 700;
+				font-family: Quicksand;
+				font-size: 22px;
+                margin: 0;
+			}
+            .pose-sanskrit {
+				color: #1e90ff;
+				font-family: Quicksand;
+				font-size: 18px;
+                font-style: italic;
 			}
 
 			footer {
@@ -88,10 +112,52 @@
 	</header>
 	<body>
 		<div class="container">
+			<h3>My 1O favorite yoga poses</h3>
 			<div class="poses">
-				<h3>My 1O favorite yoga poses</h3>
-				<p class="benefits">Benefits</p>
-				<p class="instructions">Instructions</p>
+				<div class="row">
+					<div class="col-sm-3">
+						<ul>
+							<li><a href="#" class="linkMenu">1. Downward facing dog</a></li>
+							<li><a href="#" class="linkMenu">2. Upward facing dog</a></li>
+							<li><a href="#" class="linkMenu">3. Tree</a></li>
+							<li><a href="#" class="linkMenu">4. Full plank</a></li>
+							<li><a href="#" class="linkMenu">5. Warrior 2</a></li>
+							<li><a href="#" class="linkMenu">6. Cat / Cow</a></li>
+							<li><a href="#" class="linkMenu">7. Bound angle</a></li>
+							<li><a href="#" class="linkMenu">8. Standing forward bend</li>
+							<li><a href="#" class="linkMenu">9. Pigeon</a></li>
+							<li><a href="#" class="linkMenu">10. Child</a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-9">
+						<div class="hiddenContent" id="content1" style="display: block"><p class="pose">Downward Facing Dog</p>
+                                    <p class="pose-sanskrit">Adho Mukha Svanasana</p>
+							<div class="row">
+								<div class="col-sm-6">
+									
+									<img class="img-fluid mx-auto d-block" src="img/01_downward-dog.jpg" alt="" />
+								</div>
+								<div class="col-sm-6">
+									<p class="benefits">Benefits</p>
+									<p>
+										Stretches the entire body, strengthens arms and legs,
+										improves circulation, calms the mind, and helps relieve
+										stress and fatigue.
+									</p>
+									<p class="instructions">Instructions</p>
+									<p>
+										Start on your hands and knees, spread your fingers wide,
+										tuck your toes under, and lift your hips up and back,
+										forming an inverted V shape. Press your heels towards the
+										ground, engage your core, and relax your neck. Hold for
+										several breaths.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="about">
 				<h3>How I got into yoga</h3>
